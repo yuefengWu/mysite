@@ -1,0 +1,11 @@
+<meta charset="utf-8"> 
+{% extends "base.html" %}
+{% block content %}
+    {% for comment in comments %}
+        <h2>{{ comment.blog }}</h2>
+        <p>{{ comment.name }}</p>
+        <p>{{ comment.email }}</p>
+        <p>{{ comment.create }}</p>
+    {% endfor %}
+
+{% endblock %}

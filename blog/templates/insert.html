@@ -1,0 +1,9 @@
+<meta charset="utf-8"> 
+{% extends "base.html" %}
+{% block content %}
+    {% for user in users %}
+        <h2>{{ user.name }}</h2>
+        <p>{{ user.sex }}</p>
+    {% endfor %}
+
+{% endblock %}
