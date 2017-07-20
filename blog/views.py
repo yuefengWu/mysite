@@ -42,8 +42,7 @@ def blog_show(request, id=''):
         tags = Tag.objects.all()
     except Blog.DoesNotExist:
         raise Http404
-    return render_to_response("blog_show.html",
-        {"blog": blog, "tags": tags})
+    return render_to_response("blog_show.html", {"blog": blog, "tags": tags})
 
 
 def blog_show_comment(request, id=''):
